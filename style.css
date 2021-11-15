@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("fonts/Vazir.eot");
+    src: url("fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Vazir.woff2") format("woff2"),
+    url("fonts/Vazir.woff") format("woff"),
+    url("fonts/Vazir.ttf") format("truetype");
+}
+
+:root {
+    --primary-color: #D3D3D3FF;
+    --secondary-color: #1A2930;
+    --tertialy-color: #F7CE3E;
+    --light-color: #F3F3F3;
+    --dark-color: #0A1612;
+    --max-width: 1500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vazir", Arial, Helvetica, sans-serif;
+    line-height: 2;
+    background: var(--light-color);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+#main-nav {
+    background-color: var(--secondary-color);
+}
+
+#main-nav .container {
+    display: flex;
+    align-items: baseline;
+}
+
+#main-nav ul {
+    display: flex;
+    margin-right: 5rem;
+}
+
+#main-nav li a {
+    display: inline-block;
+    color: var(--primary-color);
+    margin-left: 0.9rem;
+    padding: 0.5rem;
+    transition: border-bottom-color 1s, color 1s;
+}
+
+#main-nav li a:hover {
+    color: var(--tertialy-color);
+    border-bottom: 2px solid var(--tertialy-color);
+}
+
+.active {
+    background-color: var(--tertialy-color);
+    border-bottom: 2px solid var(--tertialy-color);
+    color: var(--dark-color) !important;
+}
+
+.active:hover {
+    color: var(--dark-color) !important;
+}
+
+#logo, #title {
+    color: var(--tertialy-color);
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+#title {
+    margin: 0 1rem;
+}
+
+.nav-login {
+    margin-right: auto;
+}
+
+#login {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    transition: color 1s;
+}
+
+#login:hover {
+    color: var(--tertialy-color);
+}
