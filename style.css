@@ -116,7 +116,7 @@ a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .carousel-wrapper {
@@ -235,6 +235,12 @@ a {
     padding: 0.3rem 0.4rem;
     border-radius: 15px;
     margin-bottom: 0.5rem;
+    transition: color 1s, background-color 1s;
+}
+
+.category:hover {
+    color: var(--secondary-color);
+    background-color: var(--tertialy-color);
 }
 
 .btn {
@@ -250,3 +256,86 @@ a {
     color: var(--tertialy-color);
     background-color: var(--secondary-color);
 }
+
+main {
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-container .cards-container {
+    grid-column: span 5;
+}
+
+.main-container .card {
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--light-color);
+    align-items: start;
+}
+
+.main-container .card img {
+    grid-column: span 2;
+}
+
+.main-container .card div {
+    grid-column: span 5;
+}
+
+aside {
+    grid-column: span 2;
+}
+
+#info {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.date-container, .visit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#info h4 {
+    margin: 1rem 0;
+}
+
+.adv {
+    margin-top: 2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.adv-title {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.adv-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.adv-img img {
+    width: 120px;
+    height: 240px;
+    margin-left: 1rem;
+}
+
