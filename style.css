@@ -142,13 +142,13 @@ a {
 
 #main-nav ul {
     display: flex;
-    margin-right: 5rem;
+    margin-right: 3rem;
 }
 
 #main-nav li a {
     display: inline-block;
     color: var(--primary-color);
-    margin-left: 0.9rem;
+    margin-left: 0.8rem;
     padding: 0.5rem;
     transition: border-bottom-color 1s, color 1s;
 }
@@ -168,7 +168,7 @@ a {
     color: var(--dark-color) !important;
 }
 
-#logo, #title {
+.main-title, .logo {
     color: var(--tertialy-color);
     font-size: 1.1rem;
     padding: 0.5rem;
@@ -178,18 +178,42 @@ a {
     margin: 0 1rem;
 }
 
-.nav-login {
+.nav-left-side {
     margin-right: auto;
+    display: flex;
+    align-items: center;
 }
 
-#login {
+.search-box {
+    margin-left: 0.5rem;
+}
+
+.search-box input[type="search"] {
+    padding: 5px 25px 5px 10px;
+    border: none;
+    border-radius: 500px;
+    font-family: "Vazir", Arial, Helvetica, sans-serif;
+}
+
+.search-box input[type="search"]:focus {
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    padding: 7px;
+    color: rgb(117, 117, 117);
+}
+
+.nav-left-icon {
+    display: inline-block;
     font-size: 1.4rem;
     color: var(--primary-color);
     padding: 0.5rem;
     transition: color 1s;
 }
 
-#login:hover {
+.nav-left-icon:hover {
     color: var(--tertialy-color);
 }
 
@@ -420,3 +444,54 @@ aside {
     margin-left: 1rem;
 }
 
+footer {
+    background-color: var(--secondary-color);
+}
+
+.main-footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parts-menu ul {
+    display: flex;
+}
+
+.parts-menu li {
+    border-left: 1px solid var(--primary-color);
+    padding: 0 1rem;
+}
+
+.parts-menu li:last-child {
+    border-left: none;
+}
+
+.parts-menu a {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    transition: color 1s;
+}
+
+.parts-menu a:hover {
+    color: var(--tertialy-color);
+}
+
+.icons a {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-left: 0.5rem;
+    transition: color 1s;
+}
+
+.icons a:hover {
+    color: var(--tertialy-color);
+}
+
+.copyright {
+    text-align: center;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
