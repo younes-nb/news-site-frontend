@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Vazir";
-    src: url("fonts/Vazir.eot");
-    src: url("fonts/Vazir.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Vazir.woff2") format("woff2"),
-    url("fonts/Vazir.woff") format("woff"),
-    url("fonts/Vazir.ttf") format("truetype");
+    src: url("../fonts/Vazir.eot");
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
 }
 
 :root {
@@ -143,6 +143,7 @@ a {
 #main-nav ul {
     display: flex;
     margin-right: 3rem;
+    align-self: end;
 }
 
 #main-nav li a {
@@ -159,13 +160,8 @@ a {
 }
 
 .active {
-    background-color: var(--tertialy-color);
     border-bottom: 2px solid var(--tertialy-color);
-    color: var(--dark-color) !important;
-}
-
-.active:hover {
-    color: var(--dark-color) !important;
+    color: var(--tertialy-color) !important;
 }
 
 .main-title, .logo {
@@ -248,7 +244,7 @@ a {
     width: 50px;
     height: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background: url("images/carousel-arrow-dark.png") 50% 50% / 40px no-repeat;
+    background: url("../images/carousel-arrow-dark.png") 50% 50% / 40px no-repeat;
     opacity: 0.7;
 }
 
@@ -273,12 +269,12 @@ a {
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background-image: url("images/political.jpg");
+    background-image: url("../images/political.jpg");
     background-size: 100% 100%;
 }
 
 .item-2 {
-    background-image: url("images/economical.jpg");
+    background-image: url("../images/economical.jpg");
     background-size: 100% 100%;
 }
 
@@ -297,9 +293,8 @@ a {
 
 .cards-container {
     grid-column: span 2;
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -309,16 +304,24 @@ a {
     align-items: center;
     border: 1px solid var(--primary-color);
     padding: 10px;
+    margin-bottom: 1rem;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.card .btn {
+    align-self: start;
 }
 
 .card img {
     grid-column: span 3;
 }
 
-.card div {
+.card > div {
     grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-header {
@@ -425,7 +428,7 @@ aside {
     border-radius: 5px;
 }
 
-.adv-title {
+.side-title {
     background-color: var(--primary-color);
     text-align: center;
     margin-bottom: 1rem;
