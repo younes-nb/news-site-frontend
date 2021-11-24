@@ -1,0 +1,32 @@
+.main-container {
+  grid-gap: 4rem !important;
+}
+.news-content {
+  grid-column: span 3 !important; 
+} 
+.news-header{ 
+    display: grid; 
+    grid-template-columns: repeat(5,1fr); 
+    grid-gap: 1.5rem;  
+    margin-bottom: 2rem;
+}  
+.news-title{ 
+    font-size: 2rem; 
+    margin-bottom: 1rem;
+}
+.news-header img{ 
+    grid-column: span 3;
+} 
+.news-header-text{
+    grid-column: span 2;
+} 
+
+.news-header-text p{ 
+    font-size: 1.1rem; 
+    text-align: justify;
+}
+.news-content > p{ 
+    font-size: 1.2rem;
+    text-indent: 3rem;
+    text-align: justify;
+}
