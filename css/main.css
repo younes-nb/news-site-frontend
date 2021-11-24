@@ -247,11 +247,25 @@ a {
     background: rgba(0, 0, 0, .7);
     border-radius: 5px;
     padding: 10px;
-    color: snow;
 }
 
 .carousel-text h2 {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.4rem; 
+    font-weight: 500;
+} 
+
+.carousel-text a{ 
+    color: var(--light-color); 
+    transition: color 0.5s;
+}
+
+.carousel-text a:hover {
+    color: var(--tertialy-color)
+}
+
+.carousel-text p:hover {
+    cursor: pointer;
+    color: var(--tertialy-color)
 }
 
 .arrow {
@@ -358,7 +372,7 @@ a {
     background-color: var(--secondary-color);
     font-size: 0.85rem;
     padding: 0.3rem 0.4rem;
-    border-radius: 15px;
+    border-radius: 15px 4px 15px 4px;
     margin-bottom: 0.5rem;
     transition: color 1s, background-color 1s;
 }
