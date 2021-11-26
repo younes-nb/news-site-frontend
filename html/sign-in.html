@@ -14,17 +14,31 @@
     ></script>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/sign-in.css" />
   </head>
   <body>
     <section>
-      <h1 class="login-title">ورود به حساب کاربری</h1>
+      <h1 class="login-title">ثبت نام</h1>
       <form>
-        <input type="text" class="login-input" placeholder="نام کاربری" />
-        <input type="password" class="login-input" placeholder="رمز عبور" />
-        <input type="submit" value="ورود" />
+        <div class="name">
+          <input
+            type="text"
+            class="login-input"
+            id="name-input"
+            placeholder="نام" 
+            required
+          />
+          <input type="text" class="login-input" placeholder="نام خانوادگی" required />
+        </div>
+        <input type="email" class="login-input" placeholder="ایمیل" required />
+        <div class="user">
+          <input type="text" class="login-input" id="username-input" placeholder="نام کاربری" required />
+          <input type="password" class="login-input" placeholder="رمز عبور" required />
+        </div>
+        <input type="submit" value="ثبت نام" />
         <p>
-          هنوز ثبت نام نکرده‌اید؟!
-          <a href="sign-in.html" class="sign-in">ثبت نام کنید </a>
+          حساب کاربری دارید؟!
+          <a href="login.html" class="sign-in">ورود به حساب کاربری</a>
         </p>
       </form>
     </section>

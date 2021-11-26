@@ -1,0 +1,20 @@
+form {
+  width: 35vw;
+}
+.name {
+  display: flex;
+  width: 100%;
+}
+#name-input {
+  margin-left: 2rem;
+}
+.user {
+  display: flex;
+  width: 100%;
+}
+#username-input {
+  margin-left: 2rem;
+}
+input[type="submit"]{ 
+    width: 70%;
+}
