@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot"),
+    url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: #06b995;
+  --secondary-color: #d2d3d3;
+  --tertialy-color: #aaaaaa;
+  --light-color: #f3f3f3;
+  --dark-color: #2d3032;
+  --max-width: 1500px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 23vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 10px;
+  background-color: var(--dark-color);
+}
+
+.login-input {
+  width: 100%;
+  font-size: 1.07rem;
+  margin-bottom: 2.5rem;
+  padding: 0.4rem;
+  font-family: "Vazir", Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.login-input:focus {
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.login-input::placeholder {
+  color: var(--secondary-color);
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  font-size: 1.1rem;
+  font-family: "Vazir", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.sign-in {
+  color: var(--primary-color);
+}
