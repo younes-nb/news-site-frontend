@@ -2,7 +2,11 @@ html {
   font-size: 15px;
 }
 .title {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+} 
+
+#main-nav{ 
+  margin-bottom: 0.6rem;
 }
 
 .main-container {

@@ -14,19 +14,29 @@
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.news-header img {
-  grid-column: span 3;
+.news-header .card-image-container {
+  grid-column: span 3 !important;
 }
-.news-header-text {
+.news-header-text-container {
   grid-column: span 2;
 }
 
-.news-header-text p {
+.news-header-text {
   font-size: 1.1rem;
   text-align: justify;
+  color: #545454;
 }
-.news-content > p {
+.news-text {
   font-size: 1.2rem;
   text-indent: 3rem;
   text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .news-header {
+    grid-template-columns: 1fr;
+  }
+  .news-header-text-container {
+    order: 2;
+  }
 }
