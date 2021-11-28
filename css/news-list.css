@@ -2,10 +2,12 @@ html {
   font-size: 15px;
 }
 .title {
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
-} 
+  font-family: var(--font-yekan);
+}
 
-#main-nav{ 
+#main-nav {
   margin-bottom: 0.6rem;
 }
 
@@ -55,6 +57,10 @@ aside {
 @media (max-width: 1125px) {
   .main-container {
     grid-template-columns: 1fr !important;
+    grid-gap: 0 !important;
+  }
+  .side-title {
+    margin-top: 2rem;
   }
   .card-text-side {
     grid-column: span 5 !important;

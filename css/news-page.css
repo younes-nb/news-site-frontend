@@ -11,7 +11,8 @@
   margin-bottom: 2rem;
 }
 .news-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: var(--font-yekan);
   margin-bottom: 1rem;
 }
 .news-header .card-image-container {
@@ -31,10 +32,15 @@
   text-indent: 3rem;
   text-align: justify;
 }
-
+@media (max-width: 1125px) {
+  .main-container {
+    grid-gap: 0 !important;
+  }
+}
 @media (max-width: 800px) {
   .news-header {
     grid-template-columns: 1fr;
+    grid-gap: 0;
   }
   .news-header-text-container {
     order: 2;

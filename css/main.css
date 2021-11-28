@@ -12,6 +12,11 @@
   src: url("../fonts/Persian\ Khat\ Khati\ 02.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Far.Yekan.ttf") format("truetype");
+}
+
 :root {
   --primary-color: #06b995;
   --secondary-color: #d2d3d3;
@@ -19,7 +24,11 @@
   --light-color: #f3f3f3;
   --dark-color: #2d3032;
   --max-width: 1400px;
+  --font-vazir: "Vazir", Arial, Helvetica, sans-serif;
+  --font-khat-khati: "Khat Khati", Arial, Helvetica, sans-serif;
+  --font-yekan: "Yekan", Arial, Helvetica, sans-serif;
 }
+
 html {
   font-size: 15px;
 }
@@ -31,7 +40,7 @@ html {
 }
 
 body {
-  font-family: "Vazir", Arial, Helvetica, sans-serif;
+  font-family: var(--font-vazir);
   line-height: 2;
   background: var(--light-color);
 }
@@ -175,7 +184,7 @@ a {
 .main-title {
   color: var(--primary-color);
   font-size: 2rem;
-  font-family: "Khat Khati", Arial, Helvetica, sans-serif;
+  font-family: var(--font-khat-khati);
 }
 .logo {
   width: 90px;
@@ -464,7 +473,7 @@ main {
 }
 
 aside {
-  grid-column: span 2;
+  grid-column: span 2; 
 }
 
 #info {

@@ -1,37 +1,21 @@
-@font-face {
-  font-family: "Vazir";
-  src: url("../fonts/Vazir.eot"),
-    url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Vazir.woff2") format("woff2"),
-    url("../fonts/Vazir.woff") format("woff"),
-    url("../fonts/Vazir.ttf") format("truetype");
-}
-
-:root {
-  --primary-color: #06b995;
-  --secondary-color: #d2d3d3;
-  --tertialy-color: #aaaaaa;
-  --light-color: #f3f3f3;
-  --dark-color: #2d3032;
-  --max-width: 1500px;
-}
-
 body {
   background-color: #e5e5e5;
 }
 .login-title {
   font-size: 2.2rem;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0 0.8rem 0;
+  font-family: var(--font-yekan);
 }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 form {
-  width: 23vw;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,4 +71,58 @@ p {
 
 .sign-in {
   color: var(--primary-color);
+}
+
+@media (max-width: 1400px) {
+  form {
+    width: 25vw;
+  }
+}
+@media (max-width: 1200px) {
+  form {
+    width: 30vw;
+  }
+  .login-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  form {
+    width: 35vw;
+  }
+}
+@media (max-width: 800px) {
+  form {
+    width: 40vw;
+  }
+  .login-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 55vw;
+  }
+}
+@media (max-width: 550px) {
+  form {
+    width: 65vw;
+  }
+  .login-title {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 450px) {
+  form {
+    width: 80vw;
+  }
+}
+@media (max-width: 350px) {
+  form {
+    width: 90vw;
+  }
+  .login-title {
+    font-size: 1.5rem;
+  }
 }
