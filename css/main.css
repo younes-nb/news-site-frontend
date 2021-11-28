@@ -735,6 +735,9 @@ footer {
 }
 
 @media (max-width: 545px) {
+  .showcase-container {
+    grid-gap: 0;
+  }
   header .card {
     grid-template-columns: 1fr;
     padding: 20px;
@@ -788,6 +791,9 @@ footer {
   }
   .category-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    padding-left: 20px;
   }
 }
 

@@ -85,8 +85,8 @@ aside {
 @media (max-width: 650px) {
   .title {
     text-align: center;
-  } 
-  .main-container{ 
+  }
+  .main-container {
     grid-gap: 0 !important;
   }
   .card {
@@ -97,10 +97,5 @@ aside {
   aside .card {
     grid-template-columns: 1fr !important;
     padding-bottom: 10px !important;
-  }
-} 
-@media (max-width: 400px){ 
-  .container{ 
-    padding-left: 20px;
   }
 }
