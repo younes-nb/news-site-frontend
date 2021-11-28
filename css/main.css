@@ -738,10 +738,12 @@ footer {
   header .card {
     grid-template-columns: 1fr;
     padding: 20px;
+    grid-gap: 0;
   }
   .main-container .card {
     grid-template-columns: 1fr;
     padding: 20px;
+    grid-gap: 0;
   }
   header .card-text {
     font-size: 1rem;
