@@ -1,128 +1,158 @@
+html,
 body {
-  background-color: #e5e5e5;
+    height: 100%;
 }
+
+body {
+    background-image: url("../images/blured-leaves.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .login-title {
-  font-size: 2.2rem;
-  margin: 2rem 0 0.8rem 0;
-  font-family: var(--font-yekan);
+    font-size: 2.2rem;
+    margin: 2rem 0 0.8rem 0;
+    font-family: var(--font-yekan);
+    color: var(--light-color);
+    font-weight: 100;
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
 }
 
 form {
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2.5rem;
-  border-radius: 10px;
-  background-color: var(--dark-color);
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .login-input {
-  width: 100%;
-  font-size: 1.07rem;
-  margin-bottom: 2.5rem;
-  padding: 0.4rem;
-  font-family: "Vazir", Arial, Helvetica, sans-serif;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    font-size: 1.07rem;
+    margin-bottom: 2.5rem;
+    padding: 0.4rem;
+    font-family: var(--font-vazir);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--light-color);
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .login-input:focus {
-  border-bottom: 2px solid var(--primary-color);
-  font-size: 1.1rem;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 1.1rem;
 }
 
 .login-input::placeholder {
-  color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 input[type="submit"] {
-  width: 100%;
-  padding: 0.4rem;
-  margin-bottom: 1.5rem;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  border: none;
-  font-size: 1.1rem;
-  font-family: "Vazir", Arial, Helvetica, sans-serif;
-  cursor: pointer;
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    font-size: 1.1rem;
+    font-family: "Vazir", Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  opacity: 0.9;
+    opacity: 0.9;
+}
+
+.login-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 p {
-  color: var(--secondary-color);
-  font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-left: 5px;
 }
 
 .sign-in {
-  color: var(--primary-color);
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 0.9rem;
 }
 
 @media (max-width: 1400px) {
-  form {
-    width: 25vw;
-  }
+    .form {
+        width: 25vw;
+    }
 }
+
 @media (max-width: 1200px) {
-  form {
-    width: 30vw;
-  }
-  .login-title {
-    font-size: 2rem;
-  }
+    .form {
+        width: 30vw;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
 }
+
 @media (max-width: 1000px) {
-  form {
-    width: 35vw;
-  }
+    .form {
+        width: 35vw;
+    }
 }
+
 @media (max-width: 800px) {
-  form {
-    width: 40vw;
-  }
-  .login-title {
-    font-size: 1.8rem;
-  }
+    .form {
+        width: 40vw;
+    }
+
+    .login-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 700px) {
-  form {
-    width: 55vw;
-  }
+    .form {
+        width: 55vw;
+    }
 }
+
 @media (max-width: 550px) {
-  form {
-    width: 65vw;
-  }
-  .login-title {
-    font-size: 1.7rem;
-  }
+    .form {
+        width: 65vw;
+    }
+
+    .login-title {
+        font-size: 1.7rem;
+    }
 }
+
 @media (max-width: 450px) {
-  form {
-    width: 80vw;
-  }
+    .form {
+        width: 80vw;
+    }
 }
+
 @media (max-width: 350px) {
-  form {
-    width: 90vw;
-  }
-  .login-title {
-    font-size: 1.5rem;
-  }
+    .form {
+        width: 90vw;
+    }
+
+    .login-title {
+        font-size: 1.5rem;
+    }
 }

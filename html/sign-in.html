@@ -1,92 +1,56 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/2185f713f9.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/sign-in.css" />
-  </head>
-  <body>
-    <section>
-      <h1 class="login-title">ثبت نام</h1>
-      <form>
-        <div class="name">
-          <input
-            type="text"
-            class="login-input"
-            id="name-input"
-            placeholder="نام" 
-            required
-          />
-          <input type="text" class="login-input" placeholder="نام خانوادگی" required />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>ثبت نام</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <link rel="stylesheet" href="../css/sign-in.css"/>
+</head>
+<body>
+<section>
+    <h1 class="login-title">ثبت نام</h1>
+    <form class="form">
+        <input
+                type="text"
+                class="login-input"
+                id="name-input"
+                placeholder="نام"
+                required
+        />
+        <input
+                type="text"
+                class="login-input"
+                placeholder="نام خانوادگی"
+                required
+        />
+        <input type="email" class="login-input" placeholder="ایمیل" required/>
+        <input
+                type="text"
+                class="login-input"
+                id="username-input"
+                placeholder="نام کاربری"
+                required
+        />
+        <input
+                type="password"
+                class="login-input"
+                placeholder="رمز عبور"
+                required
+        />
+        <input type="submit" value="ثبت نام"/>
+
+        <div class="login-text">
+            <p>حساب کاربری دارید؟!</p>
+            <a href="login.html" class="sign-in">ورود به حساب کاربری</a>
         </div>
-        <input type="email" class="login-input" placeholder="ایمیل" required />
-        <div class="user">
-          <input type="text" class="login-input" id="username-input" placeholder="نام کاربری" required />
-          <input type="password" class="login-input" placeholder="رمز عبور" required />
-        </div>
-        <input type="submit" value="ثبت نام" />
-        <p>
-          حساب کاربری دارید؟!
-          <a href="login.html" class="sign-in">ورود به حساب کاربری</a>
-        </p>
-      </form>
-    </section>
-    <svg
-      id="wave"
-      style="
-        transform: rotate(0deg);
-        transition: 0.3s;
-        position: absolute;
-        bottom: 0;
-      "
-      viewBox="0 0 1440 240"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(45, 48, 50, 1)" offset="0%"></stop>
-          <stop stop-color="rgba(45, 48, 50, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path
-        style="transform: translate(0, 0px); opacity: 1"
-        fill="url(#sw-gradient-0)"
-        d="M0,120L40,124C80,128,160,136,240,124C320,112,400,80,480,60C560,40,640,32,720,60C800,88,880,152,960,176C1040,200,1120,184,1200,156C1280,128,1360,88,1440,80C1520,72,1600,96,1680,88C1760,80,1840,40,1920,36C2000,32,2080,64,2160,84C2240,104,2320,112,2400,132C2480,152,2560,184,2640,188C2720,192,2800,168,2880,152C2960,136,3040,128,3120,124C3200,120,3280,120,3360,136C3440,152,3520,184,3600,192C3680,200,3760,184,3840,164C3920,144,4000,120,4080,116C4160,112,4240,128,4320,140C4400,152,4480,160,4560,164C4640,168,4720,168,4800,172C4880,176,4960,184,5040,176C5120,168,5200,144,5280,132C5360,120,5440,120,5520,124C5600,128,5680,136,5720,140L5760,144L5760,240L5720,240C5680,240,5600,240,5520,240C5440,240,5360,240,5280,240C5200,240,5120,240,5040,240C4960,240,4880,240,4800,240C4720,240,4640,240,4560,240C4480,240,4400,240,4320,240C4240,240,4160,240,4080,240C4000,240,3920,240,3840,240C3760,240,3680,240,3600,240C3520,240,3440,240,3360,240C3280,240,3200,240,3120,240C3040,240,2960,240,2880,240C2800,240,2720,240,2640,240C2560,240,2480,240,2400,240C2320,240,2240,240,2160,240C2080,240,2000,240,1920,240C1840,240,1760,240,1680,240C1600,240,1520,240,1440,240C1360,240,1280,240,1200,240C1120,240,1040,240,960,240C880,240,800,240,720,240C640,240,560,240,480,240C400,240,320,240,240,240C160,240,80,240,40,240L0,240Z"
-      ></path>
-      <defs>
-        <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(210, 211, 211, 1)" offset="0%"></stop>
-          <stop stop-color="rgba(210, 211, 211, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path
-        style="transform: translate(0, 50px); opacity: 0.9"
-        fill="url(#sw-gradient-1)"
-        d="M0,192L40,188C80,184,160,176,240,180C320,184,400,200,480,196C560,192,640,168,720,132C800,96,880,48,960,60C1040,72,1120,144,1200,156C1280,168,1360,120,1440,84C1520,48,1600,24,1680,44C1760,64,1840,128,1920,156C2000,184,2080,176,2160,168C2240,160,2320,152,2400,140C2480,128,2560,112,2640,120C2720,128,2800,160,2880,148C2960,136,3040,80,3120,84C3200,88,3280,152,3360,152C3440,152,3520,88,3600,72C3680,56,3760,88,3840,88C3920,88,4000,56,4080,44C4160,32,4240,40,4320,64C4400,88,4480,128,4560,120C4640,112,4720,56,4800,52C4880,48,4960,96,5040,128C5120,160,5200,176,5280,164C5360,152,5440,112,5520,80C5600,48,5680,24,5720,12L5760,0L5760,240L5720,240C5680,240,5600,240,5520,240C5440,240,5360,240,5280,240C5200,240,5120,240,5040,240C4960,240,4880,240,4800,240C4720,240,4640,240,4560,240C4480,240,4400,240,4320,240C4240,240,4160,240,4080,240C4000,240,3920,240,3840,240C3760,240,3680,240,3600,240C3520,240,3440,240,3360,240C3280,240,3200,240,3120,240C3040,240,2960,240,2880,240C2800,240,2720,240,2640,240C2560,240,2480,240,2400,240C2320,240,2240,240,2160,240C2080,240,2000,240,1920,240C1840,240,1760,240,1680,240C1600,240,1520,240,1440,240C1360,240,1280,240,1200,240C1120,240,1040,240,960,240C880,240,800,240,720,240C640,240,560,240,480,240C400,240,320,240,240,240C160,240,80,240,40,240L0,240Z"
-      ></path>
-      <defs>
-        <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(6, 185, 149, 1)" offset="0%"></stop>
-          <stop stop-color="rgba(6, 185, 149, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path
-        style="transform: translate(0, 100px); opacity: 0.8"
-        fill="url(#sw-gradient-2)"
-        d="M0,216L40,188C80,160,160,104,240,72C320,40,400,32,480,48C560,64,640,104,720,116C800,128,880,112,960,96C1040,80,1120,64,1200,76C1280,88,1360,128,1440,136C1520,144,1600,120,1680,124C1760,128,1840,160,1920,152C2000,144,2080,96,2160,92C2240,88,2320,128,2400,120C2480,112,2560,56,2640,44C2720,32,2800,64,2880,88C2960,112,3040,128,3120,116C3200,104,3280,64,3360,64C3440,64,3520,104,3600,120C3680,136,3760,128,3840,132C3920,136,4000,152,4080,148C4160,144,4240,120,4320,108C4400,96,4480,96,4560,100C4640,104,4720,112,4800,116C4880,120,4960,120,5040,132C5120,144,5200,168,5280,180C5360,192,5440,192,5520,196C5600,200,5680,208,5720,212L5760,216L5760,240L5720,240C5680,240,5600,240,5520,240C5440,240,5360,240,5280,240C5200,240,5120,240,5040,240C4960,240,4880,240,4800,240C4720,240,4640,240,4560,240C4480,240,4400,240,4320,240C4240,240,4160,240,4080,240C4000,240,3920,240,3840,240C3760,240,3680,240,3600,240C3520,240,3440,240,3360,240C3280,240,3200,240,3120,240C3040,240,2960,240,2880,240C2800,240,2720,240,2640,240C2560,240,2480,240,2400,240C2320,240,2240,240,2160,240C2080,240,2000,240,1920,240C1840,240,1760,240,1680,240C1600,240,1520,240,1440,240C1360,240,1280,240,1200,240C1120,240,1040,240,960,240C880,240,800,240,720,240C640,240,560,240,480,240C400,240,320,240,240,240C160,240,80,240,40,240L0,240Z"
-      ></path>
-    </svg>
-  </body>
+    </form>
+</section>
+</body>
 </html>
