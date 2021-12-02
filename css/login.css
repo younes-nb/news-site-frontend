@@ -4,38 +4,43 @@ body {
 }
 
 body {
-    background-image: url("../images/blured-leaves.png");
+    background-image: url("../images/leaves.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .login-title {
-    font-size: 2.2rem;
-    margin: 2rem 0 0.8rem 0;
-    font-family: var(--font-yekan);
-    color: var(--light-color);
-    font-weight: 100;
+    margin-bottom: 4rem;
+    width: 120px;
+    height: 120px;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10%;
+    height: 100%;
+    justify-content: center;
 }
 
 form {
-    width: 20vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+
+form:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .login-input {
-    width: 100%;
+    width: 80%;
     font-size: 1.07rem;
     margin-bottom: 2.5rem;
     padding: 0.4rem;
@@ -58,9 +63,9 @@ form {
 }
 
 input[type="submit"] {
-    width: 100%;
+    width: 80%;
     padding: 0.4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     border-radius: 5px;
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -84,7 +89,7 @@ input[type="submit"]:hover {
 p {
     color: var(--secondary-color);
     font-size: 0.9rem;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .sign-in {
@@ -93,23 +98,13 @@ p {
     font-size: 0.9rem;
 }
 
-@media (max-width: 1400px) {
-    .form {
-        width: 25vw;
-    }
-}
-
 @media (max-width: 1200px) {
     .form {
         width: 30vw;
     }
-
-    .login-title {
-        font-size: 2rem;
-    }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .form {
         width: 35vw;
     }
@@ -118,10 +113,7 @@ p {
 @media (max-width: 800px) {
     .form {
         width: 40vw;
-    }
-
-    .login-title {
-        font-size: 1.8rem;
+        padding: 1rem;
     }
 }
 
@@ -135,10 +127,6 @@ p {
     .form {
         width: 65vw;
     }
-
-    .login-title {
-        font-size: 1.7rem;
-    }
 }
 
 @media (max-width: 450px) {
@@ -150,9 +138,6 @@ p {
 @media (max-width: 350px) {
     .form {
         width: 90vw;
-    }
-
-    .login-title {
-        font-size: 1.5rem;
+        padding: 0.5rem;
     }
 }

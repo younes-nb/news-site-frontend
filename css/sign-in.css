@@ -1,19 +1,10 @@
-html,
-body {
-    height: 100%;
-}
-
-form {
-    width: 25vw;
-}
-
-input[type="submit"] {
-    width: 65%;
-}
-
 @media (max-height: 700px) {
     .login-input {
         margin-bottom: 2rem;
+    }
+
+    .login-title {
+        margin-bottom: 2rem !important;
     }
 }
 
